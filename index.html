@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Auth | Login & Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Login Form -->
+        <div class="form-box login" id="loginForm">
+            <form id="loginFormElement">
+                <header>
+                    <h1>Welcome Back</h1>
+                    <p>Please enter your details</p>
+                </header>
+                
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="login-password" placeholder="••••••••" required>
+                        <button type="button" class="toggle-password">Show</button>
+                    </div>
+                </div>
+                
+                <div class="options">
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        <span>Remember for 30 days</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="auth-btn">Sign In</button>
+                
+                <div class="switch-link">
+                    Don't have an account? <a href="#" id="toSignUp">Sign up</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-box signup hidden" id="signupForm">
+            <form id="signupFormElement">
+                <header>
+                    <h1>Create Account</h1>
+                    <p>Start your journey with us</p>
+                </header>
+                
+                <div class="input-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="signup-password" placeholder="••••••••" required>
+                        <button type="button" class="toggle-password">Show</button>
+                    </div>
+                </div>
+                
+                <button type="submit" class="auth-btn">Create Account</button>
+                
+                <div class="switch-link">
+                    Already have an account? <a href="#" id="toLogin">Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
